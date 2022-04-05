@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body {
+  font-family: arial;
+}
+.fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #95b0ed;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 25px;
+  box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.2);
+}
+.container {
+  width: 100%;
+  margin-top: 60px;
+  background-color: #e9edf6;
+}
+.container h3 {
+  text-align: center;
+  padding-top: 35px;
+  font-weight: bold;
+  font-size: 45px;
+}
+.kg {
+  box-sizing: border-box;
+  width: 93%;
+  background-color: white;
+  margin: 20px auto 30px;
+  border: 1px solid #b4b4b4;
+}
+.kg .img {
+  box-sizing: border-box;
+  padding: 28px 7px 0px 7px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.kg .img .g1, .g2, .g3 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: .3s;
+}
+.kg .img .g1:hover, .g2:hover, .g3:hover {
+  border-radius: 0%;
+  border: 1px solid white;
+}
+.kg .img img {
+  width: 100%;
+}
+.kg h3 {
+  text-align: center;
+  font-size: 15px;
+  color: #858585;
+  margin-top: -23px;
+  padding-bottom: 23px;
+}
+.ho {
+  text-align: center;
+  color: #858584;
+  margin-bottom: 45px;
+}
+.kgl {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.kgl .sa {
+  width: 100px;
+  float: left;
+}
+.sa .kotak {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.sa img {
+  width: 100%;
+}
+.kgl .du {
+  width: 100px;
+  float: right;
+}
+.du .kotak {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.du img {
+  width: 100%;
+}
+.div {
+  clear: both;
+}
+.overlay {
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+}
+.overlay img {
+  max-width: 80%;
+  margin: auto;
+}
+.kg .kk {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+  transform: translateY(-50px);
+}
+.kg .kk a {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+}
+.overlay a {
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+}
+ .overlay span {
+   color: white;
+ }
+ .container a {
+   text-decoration: none;
+ }
+ .tambah {
+   padding-bottom: 10px;
+   width: 60%;
+   height: 100px;
+   background-color: #e5e5e5;
+   color: black;
+   margin: 50px auto 0px;
+   box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+   transition: .3s;
+ }
+ .tambah:hover {
+   box-shadow: inset 3px 3px 4px -1px rgba(0,0,0,0.4), inset -3px -3px 4px -1px rgb(0,0,0,0.4);
+   background-color: rgb(222,222,222);
+ }
+.container .tambah h2 {
+   text-align: center;
+   line-height: 70px;
+   font-size: 40px;
+ }
+ .tambah .span {
+   width: 100%;
+   text-align: center;
+ }
+ .footer {
+   width: 100%;
+   height: 70px;
+   margin-top: 40px;
+   background-color: #1e1e1e;
+   color: white;
+   text-align: center;
+   line-height: 70px;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  loading: lazy;
+}
